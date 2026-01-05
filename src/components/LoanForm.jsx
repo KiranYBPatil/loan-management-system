@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calculator, User, FileText, Calendar, DollarSign } from 'lucide-react';
+import { Calculator, User, FileText, Calendar, IndianRupee } from 'lucide-react';
 
 const LoanForm = ({ onCalculate }) => {
     const [formData, setFormData] = useState({
@@ -137,8 +137,8 @@ const LoanForm = ({ onCalculate }) => {
 
                 {/* Loan Amount */}
                 <div style={{ position: 'relative' }}>
-                    <label htmlFor="loanAmount" style={labelStyle}>Loan Amount ($)</label>
-                    <DollarSign size={18} style={iconStyle} />
+                    <label htmlFor="loanAmount" style={labelStyle}>Loan Amount (₹)</label>
+                    <IndianRupee size={18} style={iconStyle} />
                     <input
                         type="number"
                         id="loanAmount"
